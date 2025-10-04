@@ -10,36 +10,39 @@ const ChaosSection = () => {
           </h2>
         </div>
         
-        <div className="relative max-w-5xl mx-auto flex items-center justify-center min-h-[500px]">
-          {/* Background semi-transparent images */}
-          <div className="absolute left-0 top-10 w-80 h-96 opacity-30 transform -rotate-6 animate-float" style={{ animationDelay: "0s" }}>
-            <div className="w-full h-full bg-card rounded-lg shadow-xl p-6 border-2 border-border">
-              <div className="space-y-3">
-                <div className="h-4 bg-muted-foreground/20 rounded w-3/4"></div>
-                <div className="h-4 bg-muted-foreground/20 rounded w-1/2"></div>
-                <div className="h-32 bg-muted-foreground/10 rounded mt-4"></div>
+        <div className="relative max-w-4xl mx-auto">
+          {/* Laptop mockup */}
+          <div className="bg-gradient-to-b from-muted-foreground/80 to-muted-foreground rounded-t-2xl p-2 pb-0">
+            {/* Laptop screen bezel */}
+            <div className="bg-muted-foreground/20 rounded-t-xl p-1">
+              {/* Browser/PDF viewer chrome */}
+              <div className="bg-background rounded-t-lg overflow-hidden shadow-elegant">
+                {/* Browser toolbar */}
+                <div className="bg-muted border-b border-border px-3 py-2 flex items-center gap-2">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-destructive/60"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/60"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500/60"></div>
+                  </div>
+                  <div className="flex-1 bg-background/50 rounded px-3 py-1 text-xs text-muted-foreground">
+                    📄 purchase-order-2024-3847.pdf
+                  </div>
+                </div>
+                
+                {/* PDF content area */}
+                <div className="bg-muted/30 p-6 aspect-[16/10]">
+                  <img 
+                    src={messyOrder} 
+                    alt="Purchase order document displayed on desktop screen" 
+                    className="w-full h-full object-contain rounded shadow-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          
-          <div className="absolute right-0 top-20 w-80 h-96 opacity-30 transform rotate-6 animate-float" style={{ animationDelay: "1s" }}>
-            <div className="w-full h-full bg-card rounded-lg shadow-xl p-6 border-2 border-border">
-              <div className="space-y-3">
-                <div className="h-4 bg-accent/20 rounded w-2/3"></div>
-                <div className="h-4 bg-accent/20 rounded w-3/4"></div>
-                <div className="h-32 bg-accent/10 rounded mt-4"></div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Main centered image */}
-          <div className="relative z-10 w-full max-w-2xl transform hover:scale-105 transition-transform duration-500 animate-scale-in">
-            <img 
-              src={messyOrder} 
-              alt="Messy purchase order document with annotations" 
-              className="w-full h-auto rounded-xl shadow-elegant border-4 border-white"
-            />
-          </div>
+          {/* Laptop base */}
+          <div className="bg-gradient-to-b from-muted-foreground/80 to-muted-foreground/60 h-3 rounded-b-2xl"></div>
+          <div className="bg-muted-foreground/60 h-1.5 rounded-b-3xl mx-8"></div>
         </div>
         
         <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
