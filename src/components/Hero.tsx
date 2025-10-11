@@ -18,9 +18,17 @@ const Hero = () => {
           <span className="text-primary-foreground">Order Process</span>
         </h1>
         
-        <h2 className="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto animate-fade-in-up font-medium">Automate purchase orders 
-Eliminate manual entry
-Never miss an order again</h2>
+        <ul className="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto animate-fade-in-up font-medium space-y-2 list-none">
+          <li className="flex items-center justify-center gap-2">
+            <span className="text-primary-foreground">•</span> Automate purchase orders
+          </li>
+          <li className="flex items-center justify-center gap-2">
+            <span className="text-primary-foreground">•</span> Eliminate manual entry
+          </li>
+          <li className="flex items-center justify-center gap-2">
+            <span className="text-primary-foreground">•</span> Never miss an order again
+          </li>
+        </ul>
         
         <p className="text-lg text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in leading-relaxed">💥 Say goodbye to spreadsheets, human errors, and missed revenue. Chillidocs captures, processes, and delivers structured order data through AI agents.</p>
         
