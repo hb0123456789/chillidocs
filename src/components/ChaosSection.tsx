@@ -1,4 +1,5 @@
-import messyOrder from "@/assets/messy-order.jpg";
+import deskOrder from "@/assets/desk-purchase-order.png";
+import laptopOrder from "@/assets/laptop-purchase-order.png";
 
 const ChaosSection = () => {
   return (
@@ -10,39 +11,32 @@ const ChaosSection = () => {
           </h2>
         </div>
         
-        <div className="relative max-w-4xl mx-auto">
-          {/* Laptop mockup */}
-          <div className="bg-gradient-to-b from-muted-foreground/80 to-muted-foreground rounded-t-2xl p-2 pb-0">
-            {/* Laptop screen bezel */}
-            <div className="bg-muted-foreground/20 rounded-t-xl p-1">
-              {/* Browser/PDF viewer chrome */}
-              <div className="bg-background rounded-t-lg overflow-hidden shadow-elegant">
-                {/* Browser toolbar */}
-                <div className="bg-muted border-b border-border px-3 py-2 flex items-center gap-2">
-                  <div className="flex gap-1.5">
-                    <div className="w-3 h-3 rounded-full bg-destructive/60"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500/60"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500/60"></div>
-                  </div>
-                  <div className="flex-1 bg-background/50 rounded px-3 py-1 text-xs text-muted-foreground">
-                    📄 purchase-order-2024-3847.pdf
-                  </div>
-                </div>
-                
-                {/* PDF content area */}
-                <div className="bg-muted/30 p-6 aspect-[16/10]">
-                  <img 
-                    src={messyOrder} 
-                    alt="Purchase order document displayed on desktop screen" 
-                    className="w-full h-full object-contain rounded shadow-lg"
-                  />
-                </div>
-              </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Physical document chaos */}
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-xl group-hover:opacity-30 transition-opacity"></div>
+            <div className="relative bg-card/50 backdrop-blur-sm rounded-xl p-4 shadow-elegant border border-border/50">
+              <img 
+                src={deskOrder} 
+                alt="Messy purchase order document on desk with sticky notes and papers" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-3 text-center">Paper chaos: Manual, error-prone</p>
             </div>
           </div>
-          {/* Laptop base */}
-          <div className="bg-gradient-to-b from-muted-foreground/80 to-muted-foreground/60 h-3 rounded-b-2xl"></div>
-          <div className="bg-muted-foreground/60 h-1.5 rounded-b-3xl mx-8"></div>
+
+          {/* Digital document */}
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-xl group-hover:opacity-30 transition-opacity"></div>
+            <div className="relative bg-card/50 backdrop-blur-sm rounded-xl p-4 shadow-elegant border border-border/50">
+              <img 
+                src={laptopOrder} 
+                alt="Purchase order form displayed on laptop computer screen" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-3 text-center">Digital orders: Still needs manual entry</p>
+            </div>
+          </div>
         </div>
         
         <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
