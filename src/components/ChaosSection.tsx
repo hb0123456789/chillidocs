@@ -1,4 +1,3 @@
-import deskOrder from "@/assets/desk-purchase-order.png";
 import laptopOrder from "@/assets/laptop-purchase-order.png";
 
 const ChaosSection = () => {
@@ -11,30 +10,15 @@ const ChaosSection = () => {
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Physical document chaos */}
+        <div className="max-w-4xl mx-auto">
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-xl group-hover:opacity-30 transition-opacity"></div>
-            <div className="relative bg-card/50 backdrop-blur-sm rounded-xl p-4 shadow-elegant border border-border/50">
-              <img 
-                src={deskOrder} 
-                alt="Messy purchase order document on desk with sticky notes and papers" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-3 text-center">Paper chaos: Manual, error-prone</p>
-            </div>
-          </div>
-
-          {/* Digital document */}
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-xl group-hover:opacity-30 transition-opacity"></div>
-            <div className="relative bg-card/50 backdrop-blur-sm rounded-xl p-4 shadow-elegant border border-border/50">
+            <div className="relative bg-card/50 backdrop-blur-sm rounded-xl p-6 shadow-elegant border border-border/50">
               <img 
                 src={laptopOrder} 
                 alt="Purchase order form displayed on laptop computer screen" 
                 className="w-full h-auto rounded-lg shadow-lg"
               />
-              <p className="text-sm text-muted-foreground mt-3 text-center">Digital orders: Still needs manual entry</p>
             </div>
           </div>
         </div>
