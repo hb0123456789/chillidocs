@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-import { ArrowRight, Flame } from "lucide-react";
+import logoImg from "@/assets/chilidocs-logo.png";
+import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 opacity-20">
@@ -8,9 +9,12 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
-        <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 animate-fade-in">
-          <Flame className="w-4 h-4 text-white animate-glow" />
-          <span className="text-sm font-medium text-white">Chillidocs</span>
+        <div className="mb-8 animate-fade-in">
+          <img 
+            src={logoImg} 
+            alt="ChiliDocs - Spice up your order process" 
+            className="h-20 md:h-24 mx-auto"
+          />
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up leading-tight">
