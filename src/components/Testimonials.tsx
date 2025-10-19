@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Quote, ArrowRight } from "lucide-react";
+import HubSpotFormDialog from "@/components/HubSpotFormDialog";
 
 const Testimonials = () => {
+  const [formOpen, setFormOpen] = useState(false);
   const testimonials = [
     {
       quote: "We reduced order entry time by 90%—and eliminated costly errors.",
@@ -17,7 +20,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-warm">
+    <>
+      <HubSpotFormDialog open={formOpen} onOpenChange={setFormOpen} />
+      <section className="py-20 bg-gradient-warm">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -50,13 +55,14 @@ const Testimonials = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="default" size="lg" className="group">
+          <Button variant="default" size="lg" className="group" onClick={() => setFormOpen(true)}>
             🎯 Join the growing list of smart brands
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
       </div>
     </section>
+    </>
   );
 };
 

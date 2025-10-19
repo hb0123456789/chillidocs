@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Brain, Zap, RefreshCw, Users, ArrowRight } from "lucide-react";
+import HubSpotFormDialog from "@/components/HubSpotFormDialog";
 
 const WhyChiliDocs = () => {
+  const [formOpen, setFormOpen] = useState(false);
   const reasons = [
     {
       icon: Brain,
@@ -22,7 +25,9 @@ const WhyChiliDocs = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-warm">
+    <>
+      <HubSpotFormDialog open={formOpen} onOpenChange={setFormOpen} />
+      <section className="py-20 bg-gradient-warm">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -55,13 +60,14 @@ const WhyChiliDocs = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="hero" size="xl" className="group">
+          <Button variant="hero" size="xl" className="group" onClick={() => setFormOpen(true)}>
             Talk to an Expert
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Inbox, Brain, Send, ArrowRight } from "lucide-react";
+import HubSpotFormDialog from "@/components/HubSpotFormDialog";
 
 const HowItWorks = () => {
+  const [formOpen, setFormOpen] = useState(false);
   const steps = [
     {
       icon: Inbox,
@@ -24,7 +27,9 @@ const HowItWorks = () => {
   const erpSystems = ["DMart", "Reliance", "Blinkit", "Zepto", "Swiggy Instamart", "Nature's Basket", "Amazon", "More"];
 
   return (
-    <section className="py-20 bg-background">
+    <>
+      <HubSpotFormDialog open={formOpen} onOpenChange={setFormOpen} />
+      <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -74,13 +79,14 @@ const HowItWorks = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="hero" size="xl" className="group">
+          <Button variant="hero" size="xl" className="group" onClick={() => setFormOpen(true)}>
             ✨ See It in Action → Request a Demo
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
       </div>
     </section>
+    </>
   );
 };
 
