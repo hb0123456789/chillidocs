@@ -6,6 +6,7 @@ import HubSpotFormDialog from "@/components/HubSpotFormDialog";
 
 const HowItWorks = () => {
   const [formOpen, setFormOpen] = useState(false);
+
   const steps = [
     {
       icon: Inbox,
