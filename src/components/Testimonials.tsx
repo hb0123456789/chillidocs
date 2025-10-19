@@ -40,11 +40,11 @@ const Testimonials = () => {
           ))}
         </div>
         
-        {/* Client logos placeholder */}
+        {/* Client logos */}
         <div className="flex flex-wrap justify-center items-center gap-8 mb-10 opacity-60">
-          {[1, 2, 3, 4, 5].map((i) => (
-            <div key={i} className="w-32 h-16 bg-muted rounded-lg flex items-center justify-center border">
-              <span className="text-xs text-muted-foreground font-semibold">CLIENT {i}</span>
+          {["Shrushti Natural", "M K Traders"].map((client, i) => (
+            <div key={i} className="w-40 h-16 bg-muted rounded-lg flex items-center justify-center border">
+              <span className="text-xs text-muted-foreground font-semibold">{client}</span>
             </div>
           ))}
         </div>
