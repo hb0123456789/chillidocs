@@ -4,8 +4,7 @@ const Footer = () => {
   const links = [
     { label: "About Us", href: "#" },
     { label: "Privacy", href: "#" },
-    { label: "Terms", href: "#" },
-    { label: "Careers", href: "#" }
+    { label: "Terms", href: "#" }
   ];
 
   const socialLinks = [
@@ -20,7 +19,7 @@ const Footer = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-4">
             <Flame className="w-8 h-8 text-primary" />
-            <h3 className="text-2xl font-bold">Chillidocs</h3>
+            <h3 className="text-2xl font-bold">ChiliDocs</h3>
           </div>
           <p className="text-background/80 text-lg">Spice Up Your Order Process.</p>
         </div>
@@ -38,13 +37,13 @@ const Footer = () => {
         </div>
         
         <div className="flex flex-col items-center gap-4 mb-8">
-          <a href="mailto:hello@chillidocs.com" className="flex items-center gap-2 text-background/80 hover:text-background transition-colors">
+          <a href="mailto:hellochilidocs@gmail.com" className="flex items-center gap-2 text-background/80 hover:text-background transition-colors">
             <Mail className="w-4 h-4" />
-            <span>hello@chillidocs.com</span>
+            <span>hellochilidocs@gmail.com</span>
           </a>
-          <a href="https://www.chillidocs.com" className="flex items-center gap-2 text-background/80 hover:text-background transition-colors">
+          <a href="https://www.chilidocs.co.in" className="flex items-center gap-2 text-background/80 hover:text-background transition-colors">
             <Globe className="w-4 h-4" />
-            <span>www.chillidocs.com</span>
+            <span>www.chilidocs.co.in</span>
           </a>
         </div>
         
@@ -65,7 +64,7 @@ const Footer = () => {
         </div>
         
         <div className="text-center text-sm text-background/60 border-t border-background/20 pt-8">
-          <p>© {new Date().getFullYear()} Chillidocs. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ChiliDocs. All rights reserved.</p>
         </div>
       </div>
     </footer>

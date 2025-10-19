@@ -48,17 +48,10 @@ const WhyYouNeed = () => {
           })}
         </div>
         
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <p className="text-xl font-bold text-primary mb-6">
+        <div className="text-center max-w-3xl mx-auto">
+          <p className="text-xl font-bold text-primary">
             ⚡ Manual order processing is costing you. Automate before it costs more.
           </p>
-        </div>
-        
-        <div className="text-center">
-          <Button variant="hero" size="xl" className="group">
-            Calculate Your ROI with Chillidocs
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
         </div>
       </div>
     </section>

@@ -3,8 +3,8 @@ import ChaosSection from "@/components/ChaosSection";
 import Testimonials from "@/components/Testimonials";
 import HowItWorks from "@/components/HowItWorks";
 import WhyYouNeed from "@/components/WhyYouNeed";
-import WhyChillidocs from "@/components/WhyChillidocs";
-import CaseStudy from "@/components/CaseStudy";
+import WhyChiliDocs from "@/components/WhyChillidocs";
+
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -16,8 +16,8 @@ const Index = () => {
       <Testimonials />
       <HowItWorks />
       <WhyYouNeed />
-      <WhyChillidocs />
-      <CaseStudy />
+      <WhyChiliDocs />
+      
       <FinalCTA />
       <Footer />
     </div>

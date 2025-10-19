@@ -7,7 +7,7 @@ const HowItWorks = () => {
     {
       icon: Inbox,
       title: "📥 Step 1: Ingest",
-      description: "Chillidocs reads purchase orders from emails, PDFs, or uploads—no templates needed."
+      description: "ChiliDocs reads purchase orders from emails, PDFs, or uploads—no templates needed."
     },
     {
       icon: Brain,
@@ -17,11 +17,11 @@ const HowItWorks = () => {
     {
       icon: Send,
       title: "📤 Step 3: Deliver",
-      description: "Get a ready-to-import CSV or XML—or let Chillidocs push sales orders directly into your ERP."
+      description: "Get a ready-to-import CSV or XML—or let ChiliDocs push sales orders directly into your ERP."
     }
   ];
 
-  const erpSystems = ["SAP", "Oracle", "NetSuite", "Microsoft Dynamics", "Custom ERPs"];
+  const erpSystems = ["DMart", "Reliance", "Blinkit", "Zepto", "Swiggy Instamart", "Nature's Basket", "Amazon", "More"];
 
   return (
     <section className="py-20 bg-background">
@@ -60,7 +60,7 @@ const HowItWorks = () => {
         </div>
         
         <div className="text-center mb-10">
-          <p className="text-muted-foreground mb-4 font-medium">Works with:</p>
+          <p className="text-muted-foreground mb-4 font-medium">Works for:</p>
           <div className="flex flex-wrap justify-center gap-4">
             {erpSystems.map((erp, index) => (
               <span 

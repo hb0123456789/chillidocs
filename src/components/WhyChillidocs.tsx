@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Brain, Zap, RefreshCw, Users, ArrowRight } from "lucide-react";
 
-const WhyChillidocs = () => {
+const WhyChiliDocs = () => {
   const reasons = [
     {
       icon: Brain,
@@ -26,7 +26,7 @@ const WhyChillidocs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            🌶️ Why Chillidocs?
+            🌶️ Why ChiliDocs?
           </h2>
         </div>
         
@@ -65,4 +65,4 @@ const WhyChillidocs = () => {
   );
 };
 
-export default WhyChillidocs;
+export default WhyChiliDocs;

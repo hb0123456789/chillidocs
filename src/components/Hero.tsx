@@ -30,7 +30,7 @@ const Hero = () => {
           </li>
         </ul>
         
-        <p className="text-lg text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in leading-relaxed">💥 Say goodbye to spreadsheets, human errors, and missed revenue. Chillidocs captures, processes, and delivers structured order data through AI agents.</p>
+        <p className="text-lg text-white/80 mb-10 max-w-3xl mx-auto animate-fade-in leading-relaxed">💥 Say goodbye to spreadsheets, human errors, and missed revenue. ChiliDocs captures, processes, and delivers structured order data through AI agents.</p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
           <Button size="xl" variant="secondary" className="group">

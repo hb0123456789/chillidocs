@@ -22,7 +22,7 @@ const FinalCTA = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Let Chillidocs handle the busywork so your team can focus on what matters.
+            Let ChiliDocs handle the busywork so your team can focus on what matters.
           </p>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-10 border border-white/20">
@@ -30,7 +30,7 @@ const FinalCTA = () => {
               No more missed orders. No more manual entry.
             </p>
             <p className="text-lg text-white">
-              Just clean, structured data flowing straight into your ERP.
+              Just clean, structured data flowing straight into your ERP or in CSV format.
             </p>
           </div>
           

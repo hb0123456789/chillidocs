@@ -6,13 +6,13 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote: "We reduced order entry time by 90%—and eliminated costly errors.",
-      author: "Samantha K.",
-      title: "Ops Director, FoodCo"
+      author: "Vrushabh Kakaria.",
+      title: "Ops Director, Shrushti Natural"
     },
     {
-      quote: "Chillidocs integrated directly into our ERP. Zero downtime. 100% satisfaction.",
-      author: "Liam J.",
-      title: "Supply Chain Manager, HealthPlus"
+      quote: "ChiliDocs integrated directly into our Tally. Zero downtime. 100% satisfaction.",
+      author: "Kuparpal",
+      title: "Proprietor, M K Traders"
     }
   ];
 

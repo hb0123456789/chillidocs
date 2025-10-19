@@ -23,8 +23,8 @@ const ChaosSection = () => {
           </div>
         </div>
         
-        <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
-          From cluttered inboxes to clean, structured data—Chillidocs has it covered.
+        <p className="text-center text-xl font-medium text-muted-foreground mt-12 max-w-2xl mx-auto">
+          From cluttered inboxes to clean, structured data—ChiliDocs has it covered.
         </p>
       </div>
     </section>
