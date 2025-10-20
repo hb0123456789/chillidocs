@@ -45,15 +45,6 @@ const Testimonials = () => {
           ))}
         </div>
         
-        {/* Client logos */}
-        <div className="flex flex-wrap justify-center items-center gap-8 mb-10 opacity-60">
-          {["Shrushti Natural", "M K Traders"].map((client, i) => (
-            <div key={i} className="w-40 h-16 bg-muted rounded-lg flex items-center justify-center border">
-              <span className="text-xs text-muted-foreground font-semibold">{client}</span>
-            </div>
-          ))}
-        </div>
-        
         <div className="text-center">
           <Button variant="default" size="lg" className="group" onClick={() => setFormOpen(true)}>
             🎯 Join the growing list of smart brands
