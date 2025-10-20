@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Flame } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import HubSpotFormDialog from "@/components/HubSpotFormDialog";
 
 const FinalCTA = () => {
@@ -17,28 +17,10 @@ const FinalCTA = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <Flame className="w-4 h-4 text-white animate-glow" />
-            <span className="text-sm font-medium text-white">Ready to Transform?</span>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-10 leading-tight">
             🚀 Ready to Automate Your Orders <br className="hidden md:block" />
             with Zero Hassle?
           </h2>
-          
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Let ChiliDocs handle the busywork so your team can focus on what matters.
-          </p>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-10 border border-white/20">
-            <p className="text-lg text-white mb-2">
-              No more missed orders. No more manual entry.
-            </p>
-            <p className="text-lg text-white">
-              Just clean, structured data flowing straight into your ERP or in CSV format.
-            </p>
-          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button size="xl" variant="secondary" className="group shadow-glow" onClick={() => setFormOpen(true)}>
