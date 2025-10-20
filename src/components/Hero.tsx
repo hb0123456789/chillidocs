@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-import chilidocsLogo from "@/assets/chilidocs-logo-transparent.png";
 
 import { ArrowRight } from "lucide-react";
 import HubSpotFormDialog from "@/components/HubSpotFormDialog";
@@ -17,12 +16,7 @@ const Hero = () => {
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="flex items-center mb-12 animate-fade-in">
-          <img src={chilidocsLogo} alt="ChiliDocs Logo" className="h-14 md:h-16 w-auto" />
-        </div>
-        
-        <div className="text-center">
+      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up leading-tight">
           Spice Up Your <br className="hidden md:block" />
@@ -51,7 +45,6 @@ const Hero = () => {
           <Button size="xl" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20" onClick={() => setFormOpen(true)}>
             Talk to Sales
           </Button>
-        </div>
         </div>
       </div>
       
