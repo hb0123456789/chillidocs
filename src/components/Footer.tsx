@@ -1,4 +1,4 @@
-import { Cherry, Linkedin, Twitter, Youtube, Mail, Globe } from "lucide-react";
+import { Flame, Linkedin, Twitter, Youtube, Mail, Globe } from "lucide-react";
 
 const Footer = () => {
   const links = [
@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
           <div className="flex items-center gap-2">
-            <Cherry className="w-6 h-6 text-orange-500" />
+            <Flame className="w-6 h-6 text-orange-500" />
             <h3 className="text-xl font-bold">ChiliDocs</h3>
           </div>
           
