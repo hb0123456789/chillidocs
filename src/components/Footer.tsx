@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-4">
           <div className="flex items-center gap-2">
-            <Flame className="w-6 h-6 text-primary" />
+            <Flame className="w-6 h-6 text-orange-500" />
             <h3 className="text-xl font-bold">ChiliDocs</h3>
           </div>
           
