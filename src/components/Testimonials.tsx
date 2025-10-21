@@ -9,7 +9,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote: "We reduced order entry time by 90%—and eliminated costly errors.",
-      author: "Vrushabh Kakaria.",
+      author: "Vrushabh Kakaria",
       title: "Ops Director, Shrushti Natural"
     },
     {
