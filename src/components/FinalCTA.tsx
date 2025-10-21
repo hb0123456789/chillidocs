@@ -9,7 +9,7 @@ const FinalCTA = () => {
   return (
     <>
       <HubSpotFormDialog open={formOpen} onOpenChange={setFormOpen} />
-    <section className="py-16 bg-gradient-hero relative overflow-hidden">
+    <section className="py-14 bg-gradient-hero relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />

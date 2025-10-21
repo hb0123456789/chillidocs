@@ -16,7 +16,7 @@ const Hero = () => {
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
       </div>
       
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 py-14 text-center">
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in-up leading-tight">
           Spice Up Your <br className="hidden md:block" />

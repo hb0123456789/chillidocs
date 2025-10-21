@@ -22,7 +22,7 @@ const WhyYouNeed = () => {
   ];
 
   return (
-    <section className="py-12 bg-muted">
+    <section className="py-10 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

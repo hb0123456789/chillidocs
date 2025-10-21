@@ -22,7 +22,7 @@ const Testimonials = () => {
   return (
     <>
       <HubSpotFormDialog open={formOpen} onOpenChange={setFormOpen} />
-      <section className="py-16 bg-background">
+      <section className="py-14 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
