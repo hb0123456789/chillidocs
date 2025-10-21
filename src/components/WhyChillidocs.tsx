@@ -12,15 +12,15 @@ const WhyChiliDocs = () => {
     },
     {
       icon: Zap,
-      text: "Blazing fast setup—integrate in days, not weeks"
+      text: "Blazing fast setup—start using right away"
     },
     {
       icon: RefreshCw,
-      text: "Seamless ERP integration with your stack"
+      text: "Seamless integration with your ERP"
     },
     {
       icon: Users,
-      text: "Human support with deep B2B ops experience"
+      text: "Real humans, not chatbots—expert support when you need it"
     }
   ];
 

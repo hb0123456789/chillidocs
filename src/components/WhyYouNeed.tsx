@@ -9,7 +9,7 @@ const WhyYouNeed = () => {
     },
     {
       icon: CheckCircle2,
-      text: "Eliminate manual errors and duplicates"
+      text: "Eliminate manual errors"
     },
     {
       icon: TrendingUp,
@@ -17,7 +17,7 @@ const WhyYouNeed = () => {
     },
     {
       icon: Users,
-      text: "Empower your team to focus on customers, not paperwork"
+      text: "Empower your team to focus on customers, not data entry"
     }
   ];
 

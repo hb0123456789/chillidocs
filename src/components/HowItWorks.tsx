@@ -11,17 +11,17 @@ const HowItWorks = () => {
     {
       icon: Inbox,
       title: "📥 Step 1: Ingest",
-      description: "ChiliDocs reads purchase orders from emails, PDFs, or uploads—no templates needed."
+      description: "ChiliDocs reads purchase orders from emails or uploads—no templates needed"
     },
     {
       icon: Brain,
       title: "🧠 Step 2: Understand",
-      description: "Using smart parsing and AI, it extracts relevant fields from messy formats."
+      description: "ChiliDocs' adaptive AI agents understands POs like humans and extracts relevant data"
     },
     {
       icon: Send,
       title: "📤 Step 3: Deliver",
-      description: "Get a ready-to-import CSV or XML—or let ChiliDocs push sales orders directly into your ERP."
+      description: "Get a ready-to-import CSV or let ChiliDocs push sales orders directly into your ERP"
     }
   ];
 
